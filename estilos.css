@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+    
+  }
+  
+  img { /*UVM*/
+    text-align: center; /*Es para ponerlo centrado*/
+    color: brown;
+    font-size: 35px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  h1 { /*Título*/
+    color: red;
+  }
+
+  .materia {
+    font-style: italic;
+    text-align: center; /*Es para ponerlo centrado*/
+  }
+  
+  h2 { 
+    color: black;
+    font-size: 17px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  i {
+    color: midnightblue;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  p {
+    color: red;
+  }
+
+  .accordionExample {
+    background-color: black;
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    
+    <div style="padding: 20px;">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="Unidad 2.html">Parcial 2</a></li>
+              
+              <li class="breadcrumb-item">
+
+          
+                <div class="btn-group dropend">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Constructor
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="./polimorfirsmo.html">Polimorfismo</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./herencia.html">Herencia</a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="./menú.html">Menú</a>
+                  </li>
+                  </ul>
+                </div>
+          </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div  class="col-md-12" style="width: 100%;">
+            <img src="./imgs/constructor.JPG" width="100%" alt="">
+        </div>
+        <div class="col-md-12" style="width: 100%; text-align: justify;">
+
+        <h2 style="padding: 20px;">
+            Características:
+            <br />
+            <br />
+            -Mantiene el mismo nombre de la clase a la cual pertenece y no puede devolver ningún valor.
+            <br />
+            <br />
+            -En una clase puede haber varios constructores con el mismo nombre y distinto número de argumentos (se puede sobrecargar).
+            <br />
+            <br />
+            -No se hereda.
+            <br />
+            <br />
+            -No puede devolver ningún valor (incluyendo void).
+            <br />
+            <br />
+            -Debe declararse público (salvo casos excepcionales) para que pueda ser invocado desde cualquier parte donde se desee crear un objeto de su clase.
+            <br />
+            <br />
+            <br />
+            Un constructor se puede invocar de la siguiente manera:
+            <br />
+            <br />
+            Un constructor se invoca cuando se crea un objeto de la clase mediante el operador new.
+            <br />
+            <br />
+            Si tenemos varios métodos constructores en la clase, podemos llamar a un constructor desde otro utilizando this.
+          </h4>
+          <br />
+            <br />
+        </h2>
+
+        <!--Sirve para usar el Bootstrap-->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIDAD 3</title>
+    <style>
+.offcanvas {
+  height: 500px;
+}
+      .carousel-item > img { height: 570px; margin: auto }
+  
+        </style>
+  </head>
+
+  <body style="background: black;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ISCyI</a>
+        <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="./Mi Semestre.html">Home</a>
+            <a class="nav-link" href="./Unidad 1.html">Parcial 1</a>
+            <a class="nav-link" href="./Unidad 2.html">Parcial 2</a>
+            <a class="nav-link" href="./Unidad 3.html">Parcial 3</a>
+            <a class="nav-link" href="./Contactos.html">Contactos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1>Unidad 3</h1>
+
+
+    <!--Título "PROGRAMACIÓN WEB"-->
+    <div style="text-align: center;">
+      <img src="./imgs/PROGRAMACIÓN WEB.png"/>
+    </div>
+
+    <!--Carousel-->
+    <div id="carouselExampleCaptions" 
+      class="carousel slide"
+      data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <!--1-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1">
+        </button>
+        <!--2-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2">
+        </button>
+        <!--3-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3">
+        </button>
+        <!--4-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4">
+        </button>
+      </div>
+
+      <!--HTML Imagen 1-->
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="text-align: center;">
+          <img src="./imgs/HTML.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>HTML</h5>
+            <p></p>
+          </div>
+        </div>
+        <!--CSS Imagen 2-->
+        <div class="carousel-item" style="text-align: center;">
+          <img src="./imgs/CSS.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>CSS</h5>
+            <p></p>
+          </div>
+        </div>
+        <!--BOOTSTRAP Imagen 3-->
+        <div class="carousel-item" style="text-align: center;">
+          <img src="./imgs/BOOTSTRAP.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>BOOTSTRAP</h5>
+            <p></p>
+          </div>
+        </div>
+        <!--UBUNTU Imagen 4-->
+        <div class="carousel-item" style="text-align: center;">
+          <img src="./imgs/UBUNTU.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>UBUNTU</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Botones de anterior y siguiente del carousel-->
+      <button class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Offcanvas-->
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-md-3">
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <!--Botón rojo-->
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#HTML" aria-controls="HTML" style="background-color: red; color: white; border: 0px;"><b>HTML</b></button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <!--Botón blanco-->
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#CSS" aria-controls="CSS" style="background-color: white; color: black; border: 0px;"><b>CSS</b></button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <!--Botón morado-->
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#BOOTSTRAP" aria-controls="BOOTSTRAP" style="background-color: darkslateblue; color: white; border: 0px;"><b>BOOTSTRAP</b></button>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <!--Botón amarillo-->
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#UBUNTU" aria-controls="UBUNTU" style="background-color: orange; color: black; border: 0px;"><b>UBUNTU</b></button>
+        <br />
+        </div>
+      </div>
+    </div>
+    
+    <!--Lo que abre cada botón-->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="HTML" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasBottomLabel"><i>HTML</i></h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+    </button>
+    </div>
+    <div class="offcanvas-body small">
+      <h4>Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. <br /> <br>
+      Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto. <br> <br>
+      Algo importante a tener en cuenta y con lo que no hay que confundirse, es que porque HTML sea un lenguaje no quiere decir que sea un lenguaje programación. <br> <br>
+      HTML no lo es, ya que no tiene estructuras de lenguaje de programación, como los bucles, las condiciones, las funciones, etcétera.</h4>
+    </div>
+  </div>
+  <!--Lo que abre cada botón-->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="CSS" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasBottomLabel"><i>CSS</i></h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+    </button>
+    </div>
+    <div class="offcanvas-body small">
+      <h4>El lenguaje de hojas de estilo CSS se utiliza habitualmente para dar un formato adecuado al HTML... De este modo, se definen atributos como el diseño, el color y la forma de los elementos individuales de HTML. <br> <br>
+          Se incluyeron etiquetas como <font> en HTML versión 3.2, y esto les causó muchos problemas a los desarrolladores. Dado que los sitios web tenían diferentes fuentes, fondos de colores y estilos, el proceso de reescribir el código fue largo, doloroso y costoso. Por lo tanto, CSS fue creado por W3C para resolver este problema. <br> <br>
+          La relación entre HTML y CSS es muy fuerte. Dado que HTML es un lenguaje de marcado (es decir, constituye la base de un sitio) y CSS enfatiza el estilo (toda la parte estética de un sitio web), van de la mano. <br> <br>
+          CSS no es técnicamente una necesidad, pero no querrás tener un sitio que solo tenga HTML, ya que se vería completamente desnudo. <br> <br>
+          <u>Ventajas:</u> <br> <br>
+          La diferencia entre un sitio web que implementa CSS y uno que no, es enorme y definitivamente se nota. <br> <br>
+          Quizás hayas visto algún sitio web que no se puede cargar por completo y tiene un fondo blanco con la mayor parte del texto en azul y negro. Eso significa que la parte CSS del sitio no se cargó correctamente o no existe. <br> <br>
+          Así es como se ve un sitio con solo HTML, y creo que estarás de acuerdo conmigo en que no luce muy bien. <br> <br>
+          Antes de CSS, todo el estilo debía incluirse en el marcado HTML. Esto significa que había que describir por separado todos los fondos, los colores de fuente, las alineaciones, etc. <br> <br>
+          CSS permite estilizar todo en un archivo diferente, creando el estilo allí y después integrando el archivo CSS sobre el marcado HTML. Esto hace que el marcado HTML sea mucho más limpio y fácil de mantener. <br> <br>
+          En resumen, con CSS no tienes que describir repetidamente cómo se ven los elementos individuales. Esto ahorra tiempo, hace el código más corto y menos propenso a errores. <br> <br>
+          CSS te permite tener múltiples estilos en una página HTML, y esto hace que las posibilidades de personalización sean casi infinitas. Hoy en día, esto se está volviendo una necesidad más que algo básico. <br> <br>
+      </h4>
+    </div>
+  </div>
+  <!--Lo que abre cada botón-->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="BOOTSTRAP" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasBottomLabel"><i>BOOTSTRAP</i></h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+    </button>
+    </div>
+    <div class="offcanvas-body small">
+      <h4>Es un framework CSS utilizado en aplicaciones front-end, es decir, en la pantalla de interfaz con el usuario para desarrollar aplicaciones que se adaptan a cualquier dispositivo... El propósito del framework es ofrecerle al usuario una experiencia más agradable cuando navega en un sitio. <br> <br>
+        <u>¿Qué es?</u> <br> <br>
+        Inicialmente, se llamó Twitter Blueprint y, un poco más tarde, en 2011, se transformó en código abierto y su nombre cambió para Bootstrap. Desde entonces fue actualizado varias veces y ya se encuentra en la versión 4.4. <br> <br>
+        El framework combina CSS y JavaScript para estilizar los elementos de una página HTML. Permite mucho más que, simplemente, cambiar el color de los botones y los enlaces. <br> <br>
+        Esta es una herramienta que proporciona interactividad en la página, por lo que ofrece una serie de componentes que facilitan la comunicación con el usuario, como menús de navegación, controles de página, barras de progreso y más. <br> <br>
+        Además de todas las características que ofrece el framework, su principal objetivo es permitir la construcción de sitios web responsive para dispositivos móviles. <br> <br>
+        Esto significa que las páginas están diseñadas para funcionar en desktop, tablets y smartphones, de una manera muy simple y organizada. <br> <br>
+        <u>¿Cómo funciona Bootstrap?</u> <br> <br>
+        Bootstrap está constituido por una serie de archivos CSS y JavaScript responsables de asignar características específicas a los elementos de la página. <br> <br>
+        Hay un archivo principal llamado bootstrap.css, que contiene una definición para todos los estilos utilizados. Básicamente, la estructura del framework se compone de dos directorios: <br> <br>
+        css: contiene los archivos necesarios para la estilización de los elementos y una alternativa al tema original; <br> <br>
+        js: contiene la parte posterior del archivo bootstrap.js (original y minificado), responsable de la ejecución de aplicaciones de estilo que requieren manipulación interactiva. <br> <br>
+        Para asignarle una característica a un elemento, simplemente debemos informar la clase correspondiente en la propiedad “class” del elemento que será estilizado, como mostramos e el siguiente ejemplo: <br> <br>
+        En este ejemplo, fue asignado el contenido «rounded-sm» para una propiedad de imagen. Es un estilo que agrega bordes redondeados y no un elemento. <br> <br>
+        Por lo tanto, al cargar la imagen, se aplicarán al elemento las características que se refieren a esta clase. <br> <br>
+
+      </h4>
+    </div>
+  </div>
+  <!--Lo que abre cada botón-->
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="UBUNTU" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+    <h1 class="offcanvas-title" id="offcanvasBottomLabel"><i>UBUNTU</i></h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+    </button>
+    </div>
+    <div class="offcanvas-body small">
+      <h4>Es una distribución GNU/Linux que ofrece un interesante sistema operativo para equipos de escritorio y servidores en el ámbito educativo. <br> <br>
+      Es una distribución basada en Debian cuyas principales características son: Facilidad de manejo. <br /> <br>
+      Actualizaciones frecuentes. <br> <br>
+      La iniciativa de software libre alcanza su máxima expresión cuando en el equipo se instala el sistema operativo GNU Linux en lugar de Windows. <br> <br> 
+      Existen múltiples distribuciones gratuitas (OpenSuse, Fedora, Debian, Red Hat, Ubuntu, etc). <br> <br>
+      Algunos han visto en esta diversidad uno de los principales problemas para su implantación. <br> <br>
+      No obstante todos ellos ofrecen un entorno gratuito totalmente visual y gráfico que facilita el uso de aplicaciones. <br> <br>
+      Algunas Comunidades Autónomas españolas han creado y distribuido a los centros sus propias versiones de Linux: Guadalinex (Andalucía), Linex (Extremadura), MAX (Madrid), etc. <br> <br>
+      En la actualidad a nivel mundial la tendencia que parece consolidarse es Ubuntu. <br> <br>
+      Ubuntu es una distribución GNU/Linux que ofrece un interesante sistema operativo para equipos de escritorio y servidores en el ámbito educativo. <br> <br>
+      Es una distribución basada en Debian cuyas principales características son: <br> <br>
+      Facilidad de manejo <br> <br>
+      Actualizaciones frecuentes <br> <br>
+      Facilidad de instalación del sistema <br> <br>
+      Búsqueda e instalación de programas robusta y fácil al basarse en paquetes. <br> <br>
+      Libertad de uso y distribución. <br> <br>
+      El término “Ubuntu” proviene del zulú y significa “humanidad hacia otros” o bien “yo soy porque nosotros somos”. <br> <br>
+      Precisamente su slogan “Linux para seres humanos” (Linux for Human Beings) pretende enfatizar esa facilidad de manejo. <br> <br>
+      Está patrocinado por Canonical Ltd. Se trata de una compañía británica privada fundada y financiada por el empresario sudafricano Mark Shuttleworth. <br> <br>
+      Esta empresa ofrece Ubuntu de forma libre y gratuita aprovechando las aportaciones de los desarrolladores de una amplia comunidad a nivel mundial. En lugar de lucrarse por la distribución del sistema, su financiación se obtiene del soporte técnico. La versión estable más reciente es Ubuntu 14.04 porque fue publicada en abril(04) del año 2014 (14). <br> <br>
+      Fue bautizada con el nombre clave “Trusty Tahr” (tauro fiel). Es una versión LTS con soporte extendido para 5 años para equipos de escritorio (versión Desktop) y para servidores (versión Server). <br> <br>
+      El escritorio predeterminado de Ubuntu es GNOME que es líder como escritorio y como plataforma de desarrollo en  Linux. <br> <br>
+      También existen versiones como Kubuntu con escritorio KDE o bien Xubuntu con escritorio ligero Xfce. <br> <br>
+      Edubuntu es una distribución especialmente pensada para el mundo educativo. Se trata de un paquete adicional que se instala sobre el escritorio de Ubuntu y que proporciona un interfaz y programas adaptados a los siguientes tramos educativos: <br> <br>
+      ubuntu-edu-preschool: Preescolar. (menos de 5 años) <br> <br>
+      ubuntu-edu-primary: Primaria (entre 6 y 12 años) <br> <br>
+      ubuntu-edu-secondary: Secundaria (13-18 años) <br> <br>
+      ubuntu-edu-tertiary: Universidad (más de 18 años) <br> <br>
+      Las características más destacadas de Edubuntu son: <br> <br>
+      Compatibilidad. Se puede instalar en la mayoría de ordenadores educativos. Además sus aplicaciones, como por ejemplo, OpenOffice, produce documentos que se pueden abrir y guardar con Microsoft Office. Los servidores con Ubuntu Server se pueden integrar fácilmente en la intranet de un centro. <br> <br>
+      Seguridad. Edubuntu es menos sensible a virus y troyanos que otros sistemas operativos. Está basado en políticas de seguridad que permiten a los usuarios completar sus tareas sin comprometer la estabilidad del sistema. No es necesario, por ejemplo, instalar un congelador porque no permite la instalación de ningún programa si no se dispone de la contraseña de administrador. <br> <br>
+      Facilidad de gestión. Edubuntu ofrece la tecnología de clientes ligeros LTSP en virtud de la cual equipos de prestaciones modestas pueden abrir sesión contra un servidor local. Esto facilita la gestión y mantenimiento de programas en una red local. <br> <br>
+      Economía. Es un sistema gratuito para instalar y actualizar. <br> <br>
+      Soporte. Existe en internet una amplia comunidad de soporte y ayuda sobre la instalación y gestión. <br> <br>
+      Educativo. Admite traducción a múltiples idiomas y prestaciones de accesibilidad para alumnado con necesidades educativas especiales. <br> <br>
+      Aplicaciones. Proporciona un amplio de catálogo de programas listos para ser usados en el entorno educativo. <br> <br>
+      
+    </h4>
+    </div>
+  </div>
+
+
+    <!--Sirve para usar el Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>

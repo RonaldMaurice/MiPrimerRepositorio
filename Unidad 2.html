@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIDAD 2</title>
+    <style>
+
+      .carousel-item > img { height: 570px; margin: auto }
+  
+        </style>
+  </head>
+
+  <body style="background: black;">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ISCyI</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="./Mi Semestre.html"
+              >Home</a
+            >
+            <a class="nav-link" href="./Unidad 1.html">Parcial 1</a>
+            <a class="nav-link" href="./Unidad 2.html">Parcial 2</a>
+            <a class="nav-link" href="./Unidad 3.html">Parcial 3</a>
+            <a class="nav-link" href="./Contactos.html">Contactos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1>Unidad 2</h1>
+
+    <!--Título "POO"-->
+    <div style="text-align: center;">
+      <img src="./imgs/PROGRAMACIÓN ORIENTADA A OBJETOS.png"/>
+    </div>
+
+    <!--Carousel-->
+    <div id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel">
+      <div class="carousel-indicators">
+          <!--1-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1">
+      </button>
+        <!--2-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2">
+      </button>
+        <!--3-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3">
+      </button>
+        <!--4-->
+        <button type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4">
+      </button>
+      </div>
+
+      <!--Imagen 1-->
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="text-align: center;">
+          <img src="./imgs/POLIMORFISMO.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>POLIMORFISMO</h5>
+            <p></p>
+          </div>
+        </div>
+        <!--Imagen 2-->
+        <div class="carousel-item" style="text-align: center;">
+          <img src="./imgs/HERENCIA.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>HERENCIA</h5>
+            <p></p>
+          </div>
+        </div>
+        <!--Imagen 3-->
+        <div class="carousel-item" style="text-align: center;">
+          <img src="./imgs/MENÚ.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>MENÚ</h5>
+            <p></p>
+          </div>
+        </div>
+        <!--Imagen 4-->
+        <div class="carousel-item" style="text-align: center;">
+          <img src="./imgs/CONSTRUCTOR.png" class="img-responsive" alt="..."/>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>CONSTRUCTOR</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!--Botones de anterior y siguiente del carousel-->
+      <button class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--Accordion-->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <!--POLIMORFISMO-->
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: black;">
+            <h2 style="color: white;">POLIMORFISMO</h2>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <!--color de fondo-->
+          <div class="accordion-body" style="background-color: rgb(48, 0, 48);">
+            <h4 style="color: white;"><strong><ins>El polimorfismo en JAVA se define como “Sobrecarga de parámetros”</ins></strong>
+              <br /> 
+              <br />
+              
+              <a href="./polimorfirsmo.html">Ver más...</a>
+              <br /> 
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <!--HERENCIA-->
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: black;">
+            <h2 style="color: white;">HERENCIA</h2>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <!--color de fondo-->
+          <div class="accordion-body" style="background-color: rgb(48, 0, 48);">
+            <h4 style="color: white;"><strong><ins>La herencia es la capacidad de crear clases que adquieren de manera automática los miembros (atributos y métodos) de otras clases que ya existen, pudiendo al mismo tiempo añadir atributos y métodos propios.</ins></strong>
+              <br /> 
+              <br />
+              
+              <a href="./herencia.html">Ver más...</a>
+              <br /> 
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <!--MENÚ-->
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: black;">
+            <h2 style="color: white;">MENÚ</h2>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <!--color de fondo-->
+          <div class="accordion-body" style="background-color: rgb(48, 0, 48);">
+            <h4 style="color: white;"><strong><ins>El menú son siempre el centro de la aplicación, ya que son el medio de que el usuario interactúe con esa aplicación.</ins></strong>
+              <br />
+              <br />
+              <a href="./menú.html">Ver más...</a>
+              <br /> 
+              
+              
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <!--CONSTRUCTOR-->
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo" style="background-color: black;">
+            <h2 style="color: white;">CONSTRUCTOR</h2>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <!--color de fondo-->
+          <div class="accordion-body" style="background-color: rgb(48, 0, 48);">
+            <h4 style="color: white;"><strong><ins>Un constructor es un método dentro de una clase, que se llama automáticamente cada vez que se crea un objeto de esa clase.</ins></strong>
+              <br /> 
+              <br />
+              
+              <a href="./constructor.html">Ver más...</a>
+              <br /> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+
+    <!--Sirve para usar el BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>

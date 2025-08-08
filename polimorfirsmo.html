@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polimorfismo</title>
+</head>
+<body>
+    
+    <div style="padding: 20px;">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="Unidad 2.html">Parcial 2</a></li>
+          
+          <li class="breadcrumb-item">
+
+          
+          <div class="btn-group dropend">
+            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Polimorfismo
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                  <a class="dropdown-item" href="./herencia.html">Herencia</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./menú.html">Menú</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="./constructor.html">Constructor</a>
+            </li>
+            </ul>
+          </div>
+        </li>
+          </div>
+        </ol>
+      </nav>
+    </div>
+
+    <div  class="col-md-12" style="width: 100%;">
+       <img src="./imgs/POO.png" width="100%" alt="">
+    </div>
+    <div class="col-md-12" style="width: 100%; text-align: justify;">
+        
+    
+    <h2 style="padding: 20px;">
+            Es la habilidad de una función, método, variable u objeto de poseer varias formas distintas. 
+            <br />
+            <br />
+            Su objetivo es implementar un estilo de programación llamado envío de mensajes en el que los objetos interactúan entre ellos mediante estos mensajes, que no son más que llamadas a distintas funciones.
+            <br />
+            <br />
+            Existen varios tipos de polimorfismos:
+            <br />
+            <br />
+            <u>•Asignación:</u> Es el que está más relacionado con el enlace dinámico.
+            <br />
+            <br />
+            <u>•Puro:</u> Se usa para nombrar a una función o método que puede recibir varios tipos de argumentos en tiempo de ejecución.
+            <br />
+            <br />
+            <u>•Sobrecarga:</u> Se aplica cuando existen dos o más funciones que comparten el mismo identificador, pero distinta lista de argumentos. El tipado de los argumentos se especifica en tiempo de compilación.
+            <br />
+            <br />
+            ¿Se pueden sobrecargar métodos estáticos? Sí, es posible tener dos más métodos estáticos con el mismo nombre siempre que se diferencien en los parámetros de entrada.
+            <br />
+            <br />
+            ¿Es posible sobrecargar la clase main() en Java? Sí, es posible siempre que definamos correctamente los parámetros de entrada como en el siguiente ejemplo.
+            <br />
+            <br />
+            class Demo{
+                <br />
+                <br />
+
+    public static void main(String[] args) {
+        <br />
+        <br />
+        System.out.println("Hello Folks"); // Hello Folks
+        <br />
+        <br />
+        Demo.main("Ducks");
+        <br />
+        <br />
+    }
+    <br />
+    <br />
+
+    // Sobrecargando
+    <br />
+    <br />
+    public static void main(String arg1) {
+        <br />
+        <br />
+        System.out.println("Hello, " + arg1); // Hello Ducks
+        <br />
+        <br />
+        Demo.main("Dogs","Cats");
+        <br />
+        <br />
+    }
+    <br />
+    <br />
+    public static void main(String arg1, String arg2) {
+        <br />
+        <br />
+        System.out.println("Hello, " + arg1 + " and "  + arg2); // Hello Dogs and Cats
+        <br />
+        <br />
+    }
+    <br />
+    <br />
+}
+<br />
+<br />
+            <u>•Paramétrico:</u> Existen funciones con el mismo nombre, pero se usan diferentes parámetros (nombre o tipo).
+            <br />
+            <br />
+            Aquí el método demo() se sobrecarga 3 veces: el primer método tiene 1 parámetro int, el segundo método tiene 2 parámetros int y el tercero tiene un parámetro doble. Por lo que para lidiar con esta variedad el método que se llamará está determinado por los argumentos que pasamos al llamar a los métodos. Esto sucede en tiempo de compilación en tiempo de ejecución, por lo que este tipo de polimorfismo se conoce también como polimorfismo en tiempo de compilación.
+            <br />
+            <br />
+class Overload
+<br /> <br />
+{
+    <br />
+    <br />
+    void demo (int a)
+    <br />
+    <br />
+    {
+        <br />
+        <br />
+       System.out.println ("a: " + a);
+       <br />
+       <br />
+    }
+    <br />
+    <br />
+    void demo (int a, int b)
+    <br />
+    <br />
+    {
+        <br />
+        <br />
+       System.out.println ("a and b: " + a + "," + b);
+       <br />
+       <br />
+    }
+    <br />
+    <br />
+    double demo(double a) {
+        <br />
+        <br />
+       System.out.println("double a: " + a);
+       <br />
+       <br />
+       return a*a;
+       <br />
+       <br />
+    }
+    <br />
+    <br />
+}
+<br />
+<br />
+class MethodOverloading
+<br />
+<br />
+{
+    <br />
+    <br />
+    public static void main (String args [])
+    <br />
+    <br />
+    {
+        <br />
+        <br />
+        Overload Obj = new Overload();
+        <br />
+        <br />
+        double result;
+        <br />
+        <br />
+        Obj .demo(10);
+        <br />
+        <br />
+        Obj .demo(10, 20);
+        <br />
+        <br />
+        result = Obj .demo(5.5);
+        <br />
+        <br />
+        System.out.println("O/P : " + result);
+        <br />
+        <br />
+    }
+    <br />
+    <br />
+}
+<br />
+<br />
+Salida de datos:
+<br />
+<br />
+a: 10
+<br />
+<br />
+a and b: 10,20
+<br />
+<br />
+double a: 5.5
+<br />
+<br />
+O/P : 30.25
+<br />
+<br />
+
+            <u>•Inclusión:</u> Es cuando se puede llamar a un método sin tener que conocer su tipo, así no se toma en cuenta los detalles de las clases especializadas, utilizando una interfaz común.
+            <br />
+            <br />
+            Un ejemplo muy básico en donde la clase Bishop sobreescribe el método move. Esto es el polimorfismo de inclusión.
+            <br />
+            <br />
+abstract class Piece{
+    <br />
+    <br />
+    public abstract void move(byte X, byte Y);
+    <br />
+    <br />
+}
+<br />
+<br />
+
+class Bishop extends Piece{
+    <br />
+    <br />
+ @Override
+ <br />
+ <br />
+  public void move(byte X, byte Y){
+    <br />
+    <br />
+
+  }
+  <br />
+  <br />
+}
+<br />
+<br />
+
+        </h4>
+        <br />
+        <br />
+    </h2>
+</div>
+
+
+<!--Sirve para usar el Bootstrap-->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous">
+</script>
+
+</body>
+</html>

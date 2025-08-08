@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+  </head>
+  <body>
+    <div style="padding: 20px">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="Unidad 2.html">Parcial 2</a></li>
+          
+          <li class="breadcrumb-item">
+
+          
+            <div class="btn-group dropend">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menú
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" href="./polimorfirsmo.html">Polimorfismo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./herencia.html">Herencia</a>
+              </li>
+              <li>
+                  <a class="dropdown-item" href="./constructor.html">Constructor</a>
+              </li>
+              </ul>
+            </div>
+      </li>
+        </ol>
+      </nav>
+    </div>
+
+    <div  class="col-md-12" style="width: 100%;">
+        <img src="./imgs/menú123.png" width="100%" alt="">
+    </div>
+    <div class="col-md-12" style="width: 100%; text-align: justify;">
+
+    <h2 style="padding: 20px">
+      La instrucción switch es una instrucción de múltiples vías. 
+      <br>
+      Proporciona una forma sencilla de enviar la ejecución a diferentes partes del código en función del valor de la expresión. 
+      <br>
+      Básicamente, la expresión puede ser tipos de datos primitivos byte, short, char e int. 
+      <br>
+      A partir de JDK7, también funciona con tipos enumerados (Enum en java), la clase String y las clases Wrapper.
+      <br />
+      <br>
+      Sintaxis de Switch-case:
+      <br />
+      <br>
+      // declaración de switch
+      <br />
+      <br>
+      switch(expresión)
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      // declaración case
+      <br />
+      <br>
+      // los valores deben ser del mismo tipo de la expresión
+      <br />
+      <br>
+      case valor1:
+      <br />
+      <br>
+      // Declaraciones
+      <br />
+      <br>
+      break; // break es opcional
+      <br />
+      <br>
+      case valor2 :
+      <br />
+      <br>
+      // Declaraciones
+      <br />
+      <br>
+      break; // break es opcional
+      <br />
+      <br>
+      // Podemos tener cualquier número de declaraciones de casos o case
+      <br />
+      <br>
+      // debajo se encuentra la declaración predeterminada, que se usa cuando
+      ninguno de los casos es verdadero.
+      <br />
+      <br>
+      // No se necesita descanso en el case default
+      <br />
+      <br>
+      default :
+      <br />
+      <br>
+      // Declaraciones
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      Diagrama de Flujo de Switch-case:
+      <br />
+      <br>
+      <img
+        src="./imgs/Diagrama.jpg"
+        class="img-fluid"
+        width="auto"
+        height="auto"
+        alt=""
+      />
+      <br>
+      Diagrama de Flujo de Switch-case Java
+      <br />
+      <br>
+      Algunas reglas importantes para declaraciones switch:
+      <br />
+      <br>
+      Los valores duplicados de los case no están permitidos.
+      <br />
+      <br>
+      El valor para un case debe ser del mismo tipo de datos que la variable en
+      el switch.
+      <br />
+      <br>
+      El valor para un case debe ser una constante o un literal. Las variables
+      no están permitidas.
+      <br />
+      <br>
+      La declaración break se usa dentro del switch para finalizar una secuencia
+      de instrucción.
+      <br />
+      <br>
+      La declaración break es opcional. Si se omite, la ejecución continuará en
+      el siguiente case.
+      <br />
+      <br>
+      La instrucción default es opcional, y debe aparecer al final del switch.
+      <br />
+      <br>
+      2. Ejemplos de Switch case
+      <br />
+      <br>
+      Considere el siguiente programa java, declara un llamado day cuyo valor
+      representa un día (1-7). El código muestra el nombre del día, basado en el
+      valor del día, usando la declaración switch.
+      <br />
+      <br>
+      // programa Java para demostrar switch case
+      <br />
+      <br>
+      // con tipo de datos primitivos (int)
+      <br />
+      <br>
+      public class Test
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      public static void main(String[] args)
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      int day = 5;
+      <br />
+      <br>
+      String dayString;
+      <br />
+      <br>
+      // instrucción switch con tipo de datos int
+      <br />
+      <br>
+      switch (day)
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      case 1: dayString = "Lunes"; <br /> <br>
+      break; <br /> <br>
+      case 2: dayString = "Martes"; <br /> <br>
+      break; <br /> <br>
+      case 3: dayString = "Miercoles"; <br /> <br>
+      break; <br /> <br>
+      case 4: dayString = "Jueves"; <br /> <br>
+      break; <br /> <br>
+      case 5: dayString = "Viernes"; <br /> <br>
+      break; <br /> <br>
+      case 6: dayString = "Sabado"; <br /> <br>
+      break; <br /> <br>
+      case 7: dayString = "Domingo"; <br /> <br>
+      break; <br /> <br>
+      default: dayString = "Dia inválido"; <br /> <br>
+      break; <br /> <br>
+      }
+      <br /> 
+      <br>
+      System.out.println(dayString);
+      <br /> 
+      <br>
+      }
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      3. Declaraciones anidadas de Switch Case
+      <br />
+      <br>
+      Podemos usar un switch como parte de la secuencia de la declaración de un
+      switch externo. Esto se llama un switch anidado. Como una instrucción de
+      switch define su propio bloque, no surgen conflictos entre las constantes
+      de case en el switch interno y las del switch externo. Por ejemplo:
+      <br />
+      <br>
+      // programa de Java para demostrar
+      <br />
+      <br>
+      // declaracines switch case anidadas
+      <br />
+      <br>
+      public class Test
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      public static void main(String[] args)
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      String Branch = "CSE";
+      <br />
+      <br>
+      int year = 2;
+      <br />
+      <br>
+      switch(year)
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      case 1 :
+      <br />
+      <br>
+      System.out.println("Cursos electivos: Ingles, Calculo");
+      <br />
+      <br>
+      break;
+      <br />
+      <br>
+      case 2:
+      <br />
+      <br>
+      switch (Branch) // switch anidado
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      case "CSE":
+      <br />
+      <br>
+      case "CCE":
+      <br />
+      <br>
+      System.out.println("Cursos electivos : Machine Learning, Big Data");
+      <br />
+      <br>
+      break;
+      <br />
+      <br>
+
+      case "ECE":
+      <br />
+      <br>
+      System.out.println("Cursos electivos : Programacion");
+      <br />
+      <br>
+      break;
+      <br />
+      <br>
+
+      default:
+      <br />
+      <br>
+      System.out.println("Cursos electivos : Ingenieria de Software");
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      Salida:
+      <br />
+      <br>
+      Cursos electivos : Machine Learning, Big Data
+      <br />
+      <br>
+      4. String en Switch Case
+      <br />
+      <br>
+      Desde JDK 7, podemos usar una cadena literal/constante para controlar una
+      declaración switch, lo cual no es posible en C/C++. Usar un modificador
+      basado en cadena/string es una mejora con respecto al uso de la secuencia
+      equivalente if/else.
+      <br />
+      <br>
+      Puntos importantes:
+      <br />
+      <br>
+      Operación costosa: el “switching” de strings puede ser más costosa en
+      términos de ejecución que el switching de tipos de datos primitivos. Por
+      lo tanto, es mejor activar el switch con strings solo en casos de que los
+      datos de control ya estén en forma de cadena.
+      <br />
+      <br>
+      String no debe ser NULL: asegúrese de que la expresión en cualquier
+      instrucción switch no sea nula mientras se trabaja con cadenas para evitar
+      que una NullPointerException sea lanzada en tiempo de ejecución.
+      <br />
+      <br>
+      Case Sensitive – mayúsculas/minúsculas: la instrucción switch compara el
+      objeto String en su expresión con las expresiones asociadas con cada
+      etiqueta de case como si estuviera usando el método String.equals; en
+      consecuencia, la comparación de objetos String en sentencias switch es
+      sensible a mayúsculas y minúsculas.
+      <br />
+      <br>
+      Mejor que if-else: el compilador Java genera bytecode generalmente más
+      eficiente a partir de sentencias switch que usan objetos String que de
+      sentencias if-else anidadas.
+      <br />
+      <br>
+      Ejemplo:
+      <br />
+      <br>
+      // Programa Java para demostrar el uso de un
+      <br />
+      <br>
+      // string para controlar una declaracion switch
+      <br />
+      <br>
+      public class Test
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      public static void main(String[] args)
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      String str = "dos";
+      <br />
+      <br>
+      switch(str)
+      <br />
+      <br>
+      {
+      <br />
+      <br>
+      case "uno":
+      <br />
+      <br>
+      System.out.println("uno");
+      <br />
+      <br>
+      break;
+      <br />
+      <br>
+      case "dos":
+      <br />
+      <br>
+      System.out.println("dos");
+      <br />
+      <br>
+      break;
+      <br />
+      <br>
+      case "tres":
+      <br />
+      <br>
+      System.out.println("tres");
+      <br />
+      <br>
+      break;
+      <br />
+      <br>
+      default:
+      <br />
+      <br>
+      System.out.println("no coincide");
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      }
+      <br />
+      <br>
+      Salida:
+      <br />
+      <br>
+      dos
+      <br />
+    </h2>
+
+    <!--Sirve para usar el Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
